@@ -4,6 +4,23 @@ Ensure the <main> tag keeps an automatic height and width, by applying the flex:
 body {
     display: flex;
     flex-direction: column;
+    background-color: cyan;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkblue;
+}
+
+
+.logo {
+    width: 50px;  /* Set width for the logo */
+    height: auto;  /* Maintain aspect ratio */
+    display: block;  /* Make it behave like a block element (no extra spacing) */
+    margin: 0px;  /* Center the logo horizontally */
+    padding: 10px;  /* Optional padding for spacing */
 }
 
 main {
@@ -16,6 +33,10 @@ main {
 
 To wrap up the layout, you want to be sure that your content (article) takes ⅔ of the width of the page, and your aside takes ⅓; you can assign to them the number of boxes they should fill in. This is done by applying the property flex: 2 to <article> (using up 2 boxes), and flex: 1 to <aside> (using up 1 box). */
 
+
+
+
+
 article {
     flex: 2;
     overflow-y: auto;    
@@ -27,12 +48,10 @@ aside {
 }
 
 .header_links {
-    color: red;
-    background-color: aqua;
+    color: gold;
 }
 
 span {
-    color: aqua;
     font-weight: bold;
 }
 
